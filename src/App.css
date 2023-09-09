@@ -1,38 +1,52 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+html {
+  height: 100%;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-container {
+  height: 332px;
+  width: 540px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advice-text {
+  color: white;
+  font-size: 28px;
+  margin: 40px;
+  margin-top: 116px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reroll-button {
+  margin-bottom: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  border-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-icon {
+  width: auto;
+  height: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reroll-button:hover {
+  transition: 0.1s;
+  box-shadow: -1px 1px 44px -6px rgba(0, 255, 128, 0.72);
+  -webkit-box-shadow: -1px 1px 44px -6px rgba(0, 255, 128, 0.72);
+  -moz-box-shadow: -1px 1px 44px -6px rgba(0, 255, 128, 0.72);
+  cursor: pointer;
 }

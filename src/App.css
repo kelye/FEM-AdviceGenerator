@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap");
 html {
   height: 100%;
 }
@@ -11,22 +11,41 @@ body {
 }
 
 .main-container {
-  height: 332px;
-  width: 540px;
+  height: auto;
+  width: 337px;
   background-color: hsl(217, 19%, 24%);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.advice-number {
+  color: hsl(150, 100%, 66%);
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-top: 40px;
 }
 
 .advice-text {
   color: white;
   font-size: 28px;
   margin: 40px;
-  margin-top: 116px;
+  margin-top: 30px;
+  margin-bottom: 0px;
   text-align: center;
+  position: relative;
+  font-weight: 800;
+}
+
+.divider-mobile {
+  margin-top: 36px;
+  margin-bottom: 25px;
 }
 
 .reroll-button {
@@ -49,4 +68,25 @@ body {
   -webkit-box-shadow: -1px 1px 44px -6px rgba(0, 255, 128, 0.72);
   -moz-box-shadow: -1px 1px 44px -6px rgba(0, 255, 128, 0.72);
   cursor: pointer;
+}
+
+@media only screen and (min-width: 770px) {
+  .main-container {
+    width: 540px;
+  }
+
+  .divider-desktop {
+    margin-top: 36px;
+    margin-bottom: 25px;
+  }
+
+  .divider-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .divider-desktop {
+    display: none;
+  }
 }
